@@ -17,43 +17,100 @@
 
 // a) Create a test with an expect statement using the variable provided.
 
+// ----- Problem Solving -----
+// Write a describe statement that includes the name of the function.
+// Write a test statement
+// Wtite an expect statement
+
+
+// ----- Syntax -----
 var people = [
   { name: "ford prefect", occupation: "a hitchhiker" },
   { name: "zaphod beeblebrox", occupation: "president of the galaxy" },
   { name: "arthur dent", occupation: "a radio employee" }
 ]
+describe("personInvoker", () => {
+  it('takes in an array of objects and returns an array with a sentence about each person with their name capitalized ', () => {
+    expect(personInvoker()).toEqual(["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."])
+  })
+})
+
 // Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
-
-
 
 // b) Create the function that makes the test pass.
 
+// ----- Problem Solving -----
+// Create a function that takes in an array
+// Created a variable called answer
+// ...and I'm lost
+// Austin, Theres gotta be an easier way to learn this stuff.
+// I'm just as lost now as I was on the first day. 
+// And that's how its been everytime I've tried to learn JS over the past 15 years.
+// Maybe my brain isn't cut out for vanilla JS. 
+// frustrated emoji
+
+
+// ----- Syntax -----
+const personInvoker = (array) => {
+// Brains not working, medication has long worn off. Meltdown city.
+// Iterated on this for hours, now I'm just staring at the screen and nothings happening.
+// Brain's literally not working. Not happening tonight.
+// I'll try again tomorrow with a fresh brain and eyes
+// Sorry Austin
+}
 
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 
 // a) Create a test with an expect statement using the variables provided.
 
-var hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
-// Expected output: [ 2, 0, -1, 0 ]
-var hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
-// Expected output: [ 2, 1, -1 ]
+// ----- Problem Solving -----
+// Write a describe statement that includes the name of the function.
+// Write a test statement
+// Wtite an expect statement
 
+// ----- Syntax -----
+describe('onlyRemainders', () => {
+  var hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
+  // Expected output: [ 2, 0, -1, 0 ]
+  var hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
+  // Expected output: [ 2, 1, -1 ]
+  it('takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3', () => {
+    expect(onlyRemainders()).toEqual([ 2, 0, -1, 0 ])
+    expect(onlyRemainders()).toEqual([ 2, 1, -1 ])
+  });
+});
 
 
 // b) Create the function that makes the test pass.
+const onlyRemainders = (array) => {
 
+}
 
 
 // --------------------3) Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
 
 // a) Create a test with an expect statement using the variables provided.
 
-var cubeAndSum1 = [2, 3, 4]
-// Expected output: 99
-var cubeAndSum2 = [0, 5, 10]
-// Expected output: 1125
+// ----- Problem Solving -----
+// Write a describe statement that includes the name of the function.
+// Write a test statement
+// Wtite an expect statement
 
+// ----- Syntax -----
+describe('numbersCubed', () => {
+  var cubeAndSum1 = [2, 3, 4]
+  // Expected output: 99
+  var cubeAndSum2 = [0, 5, 10]
+  // Expected output: 1125
+  it('takes in an array of numbers and returns the sum of all the numbers cubed', () => {
+    expect(numbersCubed()).toEqual(99)
+    expect(numbersCubed()).toEqual(1125)
+  });
+});
 
 
 // b) Create the function that makes the test pass.
+const numbersCubed = (array) => {
+
+}
