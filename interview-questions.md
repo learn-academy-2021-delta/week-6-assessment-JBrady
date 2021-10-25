@@ -11,6 +11,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer: You can add a foreign key column after you've created the application, but you have to migrate the database in order for the column to be recognized. The name of the key column would have to be the same name as another column in the table that your referencing.
 
+  CORRECT ANSWER - Cohort has_many Students. Students belongs_to Cohort. Student has the foreighn key because the foreign key is always on the belongs to side, name of the foreign column is cohort_id:integer, generate migration to fix the missing column
+
 
 
 2. Which RESTful routes must always be passed params? Why?
@@ -18,6 +20,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Your answer: At the moment, I can't seem to remember what RESTful routes are or do.
 
   Researched answer: RESTful routes are how an app routes traffic and allows the user to navigate through the app. They also allow for interactions with databases. Any route that is requesting or sending data would need to be passed params for the app to know what data needs to be sent or received.
+
+  CORRECT ANSWER - Edit, Update, Show, Destroy - We have to know which item we are performing the action on
 
 
 
@@ -40,28 +44,45 @@ Then, research the question to expand on your answer. Even if you feel you have 
   'rails generate model' is used to create the model via the command line
 
 
+  CORRECT ANSWER - rails g model - model class, migration // rails g controller - controller class, view folder // rails g spec - testing folder // rails g migration - migration // rails g resource - model, controller, view folder, migration // rails g scaffold - controller, model, views folders, testing // 
+
+
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
 method="GET"    /students    
-The controller method would be "Index" and would request all the items in the students database      
+The controller method would be "Index" and would request all the items in the students database    
+
+CORRECT ANSWER - index - get all the data from the db
 
 method="POST"   /students  
 The controller method would be "Create" and would add new items to the students database, or update/modify data in the database.
 
+CORRECT ANSWER - create - create a new student instance in the db
+
 method="GET"    /students/new
 The controller method would be "New" which shows a static page with a form that allows you to enter data into the students database.
+
+CORRECT ANSWER - new - form for creating a new student
 
 method="GET"    /students/2  
 The controller method would be "Show" which requests one item of data (in this case, it's requesting item 2)
 
+CORRECT ANSWER - show - displaying the student with the id 2
+
 method="GET"    /students/2/edit  
 The controller method would be "Edit" and would a static page with a form that would allow you to modify item 2.  
+
+CORRECT ANSWER - edit - form for editing a specific student
 
 method="PATCH"  /students/2    
 The controller method would be "Update" and would modify item 2 in the database.  
 
+CORRECT ANSWER - update - modifying the instance of the specific student
+
 method="DELETE" /students/2    
 The controller method would be "Destroy" and would remove item 2 from the database.  
+
+CORRECT ANSWER - destroy - remove the instance of the student with the id 2
 
 
 
